@@ -1,0 +1,82 @@
+body {
+  padding: 20px;
+}
+
+.car {
+  padding: 20px 60px 20px;
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 15px rgb(184, 178, 178);
+
+  &__title {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  &__form__card {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    gap: 5px;
+  }
+
+  label {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  input {
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
+  &__btn {
+    padding: 10px 40px;
+    background: linear-gradient(to right, #7358CB, #C151C1);
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s;
+  }
+
+  &__btn:hover {
+    background: linear-gradient(to right,#C151C1, #7358CB);
+    transform: scale(1.03);
+  }
+  &__btn:active {
+    transform: scale(1);
+  }
+
+  #color {
+    padding: 9px 20px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 600;
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+
+  @media (max-width: 650px) {
+    &__form {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 5px;
+    }
+
+    padding: 10px;
+  }
+}
